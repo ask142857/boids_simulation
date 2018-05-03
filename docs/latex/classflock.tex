@@ -1,0 +1,62 @@
+\hypertarget{classflock}{}\section{flock Class Reference}
+\label{classflock}\index{flock@{flock}}
+
+
+This class stores the data of the entire flock and their velocities.  
+
+
+
+
+{\ttfamily \#include $<$boid.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classflock_a61593eacf077094a82752e2f199011ab}\label{classflock_a61593eacf077094a82752e2f199011ab}} 
+\mbox{\hyperlink{classflock_a61593eacf077094a82752e2f199011ab}{flock}} (int n1, float dis\mbox{[}3\mbox{]}, float co\mbox{[}3\mbox{]}, \mbox{\hyperlink{classboid}{boid}} set\mbox{[}1000\mbox{]})
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classflock_a11714695c03d9639b5dbe71f563b04ea}\label{classflock_a11714695c03d9639b5dbe71f563b04ea}} 
+float \mbox{\hyperlink{classflock_a11714695c03d9639b5dbe71f563b04ea}{radius}} (int a, int b)
+\begin{DoxyCompactList}\small\item\em calculates distance between two birds \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classflock_ad8091787fa9dc3a5bb8fdbadc5992306}\label{classflock_ad8091787fa9dc3a5bb8fdbadc5992306}} 
+void \mbox{\hyperlink{classflock_ad8091787fa9dc3a5bb8fdbadc5992306}{velocity\+\_\+boundary}} (int a)
+\begin{DoxyCompactList}\small\item\em limits velocity boundary \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classflock_ad29b3fa757bf0aae67d34395e78dcd14}\label{classflock_ad29b3fa757bf0aae67d34395e78dcd14}} 
+\mbox{\hyperlink{classvector__3}{vector\+\_\+3}} \mbox{\hyperlink{classflock_ad29b3fa757bf0aae67d34395e78dcd14}{position\+\_\+boundary}} (int a)
+\begin{DoxyCompactList}\small\item\em limits position\+\_\+boundary \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classflock_ac721457870dd50079eeb95d126057ed2}\label{classflock_ac721457870dd50079eeb95d126057ed2}} 
+\mbox{\hyperlink{classvector__3}{vector\+\_\+3}} \mbox{\hyperlink{classflock_ac721457870dd50079eeb95d126057ed2}{cohesive}} (int a)
+\begin{DoxyCompactList}\small\item\em individual cohesion calculation \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classflock_a5552e46786fc44709665b7661737eb81}\label{classflock_a5552e46786fc44709665b7661737eb81}} 
+\mbox{\hyperlink{classvector__3}{vector\+\_\+3}} \mbox{\hyperlink{classflock_a5552e46786fc44709665b7661737eb81}{moving\+\_\+away}} (int a)
+\begin{DoxyCompactList}\small\item\em individual reflection calculation \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classflock_a9018d71c14f24ecdbfa244bff05ec884}\label{classflock_a9018d71c14f24ecdbfa244bff05ec884}} 
+\mbox{\hyperlink{classvector__3}{vector\+\_\+3}} \mbox{\hyperlink{classflock_a9018d71c14f24ecdbfa244bff05ec884}{allignment}} (int a)
+\begin{DoxyCompactList}\small\item\em individual alignment calculation \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classflock_aeaf1b4e69875113e0d3bedc4296fa871}\label{classflock_aeaf1b4e69875113e0d3bedc4296fa871}} 
+void \mbox{\hyperlink{classflock_aeaf1b4e69875113e0d3bedc4296fa871}{next\+Instant}} ()
+\begin{DoxyCompactList}\small\item\em summs up all the coefficients and updates it to next instant \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classflock_a59c42af43982fa5a4e709d6966de95ed}\label{classflock_a59c42af43982fa5a4e709d6966de95ed}} 
+int \mbox{\hyperlink{classflock_a59c42af43982fa5a4e709d6966de95ed}{n}}
+\begin{DoxyCompactList}\small\item\em Number of birds. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classflock_a00510c8b112d186bd346b28c164b6849}\label{classflock_a00510c8b112d186bd346b28c164b6849}} 
+float \mbox{\hyperlink{classflock_a00510c8b112d186bd346b28c164b6849}{distance}} \mbox{[}3\mbox{]}
+\begin{DoxyCompactList}\small\item\em radius in which rules apply \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classflock_a980d67f4d60ba0628542dc60d8124cea}\label{classflock_a980d67f4d60ba0628542dc60d8124cea}} 
+float \mbox{\hyperlink{classflock_a980d67f4d60ba0628542dc60d8124cea}{coef}} \mbox{[}3\mbox{]}
+\begin{DoxyCompactList}\small\item\em coefficient of cohesion, reflection, alignment \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classflock_aa007282c2d3219b8c6bb4eb8555e2829}\label{classflock_aa007282c2d3219b8c6bb4eb8555e2829}} 
+\mbox{\hyperlink{classboid}{boid}} \mbox{\hyperlink{classflock_aa007282c2d3219b8c6bb4eb8555e2829}{set\+\_\+of\+\_\+boids}} \mbox{[}1000\mbox{]}
+\begin{DoxyCompactList}\small\item\em all birds \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class stores the data of the entire flock and their velocities. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+L\+E\+N\+O\+V\+O/\+Desktop/boids\+\_\+ask/boid.\+h\item 
+C\+:/\+Users/\+L\+E\+N\+O\+V\+O/\+Desktop/boids\+\_\+ask/boid.\+cpp\end{DoxyCompactItemize}
